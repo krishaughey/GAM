@@ -1,0 +1,11 @@
+#Change to a Vault Former Employee License from List of User Emails
+gam csv TermedUsers.csv gam user ~Email add license Google-Vault-Former-Employee > Termed_Vault.csv
+
+#Change to a Google Enterpise License
+gam user USER@reachlocal.com add license 1010020020
+
+#Remove a license from an OU of Users
+gam ou Gannett_Staging_Active/Litigation_Hold delete license Google-Vault-Former-Employee
+
+#Add a license to an OU of Users
+gam ou Gannett_Staging_Active/Litigation_Hold add license 1010020020

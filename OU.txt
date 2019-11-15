@@ -1,0 +1,8 @@
+#Move user to new OU
+gam update org Gannett_Staging_Active add users USER@reachlocal.com
+
+#Add list of users to an OU
+gam update org Gannett_Staging_Active add file FinalAccountList.txt
+
+#Print list of users in an OU
+gam print users query "orgUnitPath=/Gannett_Staging_Active" > Gannett_Staging_Active-Users.csv
