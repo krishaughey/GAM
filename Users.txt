@@ -1,5 +1,5 @@
 #Print Users Matching Query Prefix
-gam print users users query “email:vfe*” > vfe.txt
+gam print users query “email:vfe*” > vfe.txt
 
 #Print Users Matching Domain
 gam print users emails query 'email:reachlocal.mx' > MexicoAlias.csv
