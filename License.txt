@@ -1,4 +1,4 @@
-#Print Licenses (list of users) by Product
+#Print Licenses (list of users) by Product (Google-Apps)
 gam print licenses products Google-Apps > RL_Licenses_20200121.csv
 
 #Change to a Vault Former Employee License from List of User Emails
