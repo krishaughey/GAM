@@ -14,13 +14,13 @@ gam update group <group> who_can_post_message all_in_domain_can_post|all_manager
  [delimiter <delimchar>] [fields <list,of,fields>]
 
 
-gam print groups name description members > RL_Groups.csv
+gam print groups name description members > Groups.csv
 
 gam print groups allfields todrive
 
-gam csv GfB.csv gam update group ~Name add owner ~Owner
-gam csv GfB.csv gam update group ~Name add owner ~Owner2
-gam csv GfB.csv gam update group ~Name add owner ~Owner3
+gam csv GROUPs.csv gam update group ~Name add owner ~Owner
+gam csv GROUPs.csv gam update group ~Name add owner ~Owner2
+gam csv GROUPs.csv gam update group ~Name add owner ~Owner3
 
 gam csv todelete.csv gam delete group ~Email
 

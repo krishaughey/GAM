@@ -14,4 +14,4 @@ export GAM_THREADS=10
 #gam batch <batch-filename>
 
 #Pipe Command Example
-gam print users query "orgUnitPath='/Students'" | gam csv - gam update user ~primaryEmail imap off
+gam print users query "orgUnitPath='/<OrganizationalUnit>'" | gam csv - gam update user ~primaryEmail imap off
