@@ -4,10 +4,10 @@ gam info domain
 
 gam print domains todrive
 
-gam update verify reachlocal.gannett.com txt
+gam update verify NewDomain txt
 
-gam create domain reachlocal.gannett.com
-gam create verify reachlocal.gannett.com
-gam update verify reachlocal.gannett.com txt
+gam create domain NewDomain
+gam create verify NewDomain
+gam update verify NewDomain txt
 
 gam info verify

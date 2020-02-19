@@ -1,8 +1,8 @@
 #Filter from self to trash
-gam user khaughey@reachlocal.com filter from khaughey@gannett.com trash
+gam user USER@Domain filter from USER@NewDomain trash
 
 #All Email Bypass SPAM
-gam user khaughey@reachlocal.com filter from '*' neverspam
+gam user USER@Domain filter from '*' neverspam
 
 gam csv FILE.csv gam user ~User filter from '*' neverspam
 gam csv FILE.csv gam user ~User show filter > NeverSpam_AU.csv

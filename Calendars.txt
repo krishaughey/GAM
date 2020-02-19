@@ -1,12 +1,12 @@
 # gam calendar <calendar email> add freebusy|read|editor|owner <user email>
 
 # show calendar ACL
-gam calendar reachlocal.com_35333539353737323734@resource.calendar.google.com showacl
+gam calendar Domain_35333539353737323734@resource.calendar.google.com showacl
 
 # Add user as owner to calendar
-gam csv RL_Resources.csv gam calendar ~Email add owner ~Owner
+gam csv List.csv gam calendar ~Email add owner ~Owner
 
 gam calendar ~Email showacl > Output.csv
 
 #Get All Calendars for a List of Groups
-gam csv DevOps_GroupList.csv gam group ~Email show calendars > DevOps_Calendars.csv
+gam csv List.csv gam group ~Email show calendars > FileName.csv

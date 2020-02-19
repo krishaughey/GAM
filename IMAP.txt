@@ -1,5 +1,5 @@
-gam ou Gannett_Staging_Active show imap > IMAP.csv (determine IMAP status)
+gam ou <OrganizationalUnit> show imap > IMAP.csv (determine IMAP status)
 
-gam user aamco_stop_request@reachlocal.com imap on (for testing turning on single account)
+gam user aamco_stop_request@Domain imap on (for testing turning on single account)
 
-gam ou Gannett_Staging_Active imap on (turn IMAP on, default maxfoldersize is 0)
+gam ou <OrganizationalUnit> imap on (turn IMAP on, default maxfoldersize is 0)

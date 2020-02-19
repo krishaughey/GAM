@@ -1,11 +1,11 @@
-gam user khaughey@reachlocal.com show forwardingaddresses
+gam user USER@Domain show forwardingaddresses
 
 #gam <who> forward on|off [email address] [keep|archive|delete]
 
-gam user khaughey@reachlocal.com add forwardingaddress khaughey@reachlocal.gannett.com
-gam user khaughey@reachlocal.com forward on khaughey@reachlocal.gannett.com keep
+gam user USER@Domain add forwardingaddress USER@NewDomain
+gam user USER@Domain forward on USER@NewDomain keep
 
 # Delete Forward
 #gam user <username>|group <groupname>|ou <ouname>|all users delete forwardingaddress <EmailAddress>
 
-gam user khaughey@reachlocal.com delete forwardingaddress khaughey@reachlocal.gannett.com
+gam user USER@Domain delete forwardingaddress USER@NewDomain
