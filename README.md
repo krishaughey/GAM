@@ -1,18 +1,10 @@
-# GAM
-# Commands and Scripts for GAM Google API
+# GAM - Commands and Scripts for GAM Google API
 
-# https://gamcheatsheet.com/
-# https://github.com/jay0lee/GAM
+Quick Reference - https://gamcheatsheet.com/
 
-#Parallel GAM Command Control (Mac)
-export GAM_THREADS=10
-#Parallel GAM Command Control (Win)
-set GAM_THREADS=10
+GAM Repo - https://github.com/jay0lee/GAM
 
-# Search Operators in G Suite - https://support.google.com/mail/answer/7190?hl=en
-
-# GAM FILTER/FORWARD COMMANDS
-
+Search Operators in G Suite - https://support.google.com/mail/answer/7190?hl=en
 
 # Syntax
 
@@ -21,7 +13,7 @@ gam user <username>  forward on|off  <EmailAddress> delete
     Who - forward on or off - where to - the action to take on the original mailbox item
 
 
-# Run Forward and Filter on Single User (RUN THESE ONE AT A TIME)
+# Forward and Filter (migration)
 gam user USER@reachlocal.com add forwardingaddress USER_FWD@reachlocal.gannett.com
 gam user USER@reachlocal.com forward on USER_FWD@reachlocal.gannett.com delete
 gam user USER@reachlocal.com filter from USER@reachlocal.com trash
@@ -38,7 +30,7 @@ Gam info user khaughey@reachlocal.com
 Gam whatis publisher-ops@reachlocal.com
 
 # Identifiy Filter
-gam user eddie.valdez@reachlocal.com show filters
+gam user USER@domain show filters
 
 # Remove Filter:
 gam user eddie.valdez@reachlocal.com delete filters ANe1Bmj7YST9EbOjouCIBluj3FEhcBrTjmAa8w
@@ -89,3 +81,5 @@ gam user USER@reachlocal.com delete messages query before:2018/01/01 query label
 
 ## Save statements one per line to txt format, then launch with the following:
 gam batch TXTFILE.txt > Output.csv
+
+
