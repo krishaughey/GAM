@@ -24,6 +24,9 @@
 ##### Drive Report from List
     gam csv DrvGrp_A.csv gam user ~primaryEmail show filelist name shared permissions > DriveReport_Group_A.csv
 
+##### Report on User's Storage Usage
+      gam report users parameters accounts:drive_used_quota_in_mb,accounts:gmail_used_quota_in_mb todrive
+
 ##### Change Ownership of Specific Drive Item (Using ID)
     gam user OldOwner@domain.com update drivefileacl 0ByS7P5FlrbOT NewOwner@domain.com role owner
 

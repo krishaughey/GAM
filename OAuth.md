@@ -1,5 +1,7 @@
-#Set the used oauth key
-export OAUTHFILE=oauth.txt-mydomain.com
+# GAM OAUTH
 
-#determine the key in use
-gam oauth info
+##### Set the used oauth key
+    export OAUTHFILE=oauth.txt-mydomain.com
+
+##### Determine the Key in se
+    gam oauth info

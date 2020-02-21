@@ -1,12 +1,16 @@
-#Print Users Matching Query Prefix
-gam print users query “email:vfe*” > vfe.txt
+#GAM Users
 
-#Print Users Matching Domain
-gam print users emails query 'email:Domain' > FileName.csv
+##### Print Users Matching Query Prefix
+    gam print users query “email:vfe*” > vfe.txt
 
-#Print users from a specific OU
-gam print users query "orgUnitPath=/<OrganizationalUnit>" > FileName.csv
+##### Print Users Matching Domain
+    gam print users emails query 'email:Domain' > FileName.csv
 
-gam report users parameters accounts:drive_used_quota_in_mb,accounts:gmail_used_quota_in_mb todrive
+##### Print users from a specific OU
+    gam print users query "orgUnitPath=/<OrganizationalUnit>" > FileName.csv
 
-gam print users emails todrive
+##### Report on User's Storage Usage
+    gam report users parameters accounts:drive_used_quota_in_mb,accounts:gmail_used_quota_in_mb todrive
+
+##### Print a list of User Emails
+    gam print users emails > FileName.csv

@@ -1,8 +1,10 @@
-#Move user to new OU
-gam update org <OrganizationalUnit> add users USER@Domain
+# GAM OU
 
-#Add list of users to an OU
-gam update org <OrganizationalUnit> add file FinalAccountList.txt
+##### Move user to new OU
+    gam update org <OrganizationalUnit> add users USER@Domain
 
-#Print list of users in an OU
-gam print users query "orgUnitPath=/<OrganizationalUnit>" > FileName.csv
+##### Add list of users to an OU
+    gam update org <OrganizationalUnit> add file FileName.txt
+
+##### Print list of users in an OU
+    gam print users query "orgUnitPath=/<OrganizationalUnit>" > FileName.csv

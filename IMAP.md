@@ -1,5 +1,10 @@
-gam ou <OrganizationalUnit> show imap > IMAP.csv (determine IMAP status)
+# GAM IMAP Settings
 
-gam user aamco_stop_request@Domain imap on (for testing turning on single account)
+##### Determine IMAP Status on Users in an OU
+    gam ou <OrganizationalUnit> show imap > IMAP.csv
 
-gam ou <OrganizationalUnit> imap on (turn IMAP on, default maxfoldersize is 0)
+##### Enable IMAP on a Single Account
+    gam user aamco_stop_request@Domain imap on
+
+##### Enable IMAP for an Entire OU of Accounts
+    gam ou <OrganizationalUnit> imap on

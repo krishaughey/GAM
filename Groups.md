@@ -1,3 +1,5 @@
+# GAM Groups
+
 ##### Group Moderation Settings
     gam update group <group> message_moderation_level moderate_all_messages|moderate_new_members|moderate_none|moderate_non_members
 
@@ -23,6 +25,6 @@
 
 ##### Bulk Create Groups
         gam csv todelete.csv gam create group ~Email
-        
+
 ##### Bulk Delete Groups
     gam csv todelete.csv gam delete group ~Email
